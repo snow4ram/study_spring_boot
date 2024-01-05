@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Conditional(MyCustomConditionalImpl.class)
+@Conditional({MyCustomConditionalImpl.class})
 public @interface MyCustomConditional {
 
     String value();

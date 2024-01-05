@@ -23,18 +23,20 @@ repositories {
 
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation ('org.springframework.boot:spring-boot-starter-web')	{
+		exclude group: 'org.springframework.boot' , module: 'spring-boot-starter-tomcat'
+	}
 
 //  Do not use tomcat.
 //	{
 //		exclude group: 'org.springframework.boot' , module: 'spring-boot-starter-tomcat'
 //	}
 
-	//jetty 라이브러리
-//	implementation 'org.springframework.boot:spring-boot-starter-jetty'
+	/**jetty 라이브러리**/
+	//implementation 'org.springframework.boot:spring-boot-starter-jetty'
 
-	//undertow 라이브러리
-	//implementation 'org.springframework.boot:spring-boot-starter-undertow'
+	/**undertow 라이브러리**/
+	implementation 'org.springframework.boot:spring-boot-starter-undertow'
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
