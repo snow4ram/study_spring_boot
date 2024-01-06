@@ -1,4 +1,4 @@
-package hellospringboot.jung;
+package hellospringboot.jung.Test;
 
 import hellospringboot.jung.servlet.JettyServletConfig;
 import hellospringboot.jung.servlet.TomcatServletConfig;

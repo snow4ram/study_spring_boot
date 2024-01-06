@@ -23,9 +23,8 @@ repositories {
 
 
 dependencies {
-	implementation ('org.springframework.boot:spring-boot-starter-web')	{
-		exclude group: 'org.springframework.boot' , module: 'spring-boot-starter-tomcat'
-	}
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
 
 //  Do not use tomcat.
 //	{
@@ -36,7 +35,7 @@ dependencies {
 	//implementation 'org.springframework.boot:spring-boot-starter-jetty'
 
 	/**undertow 라이브러리**/
-	implementation 'org.springframework.boot:spring-boot-starter-undertow'
+	//implementation 'org.springframework.boot:spring-boot-starter-undertow'
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
